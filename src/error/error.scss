@@ -1,0 +1,95 @@
+@import "../styles/index.scss";
+
+$error-bg-color: #000;
+$error-text-color: #fff;
+$error-accent-color: #ff6f61;
+
+.error-page {
+  position: relative;
+  height: 100vh;
+  background: var(--color-black);
+  overflow: hidden;
+  color: var(--color-white);
+  text-align: center;
+  @include flex-center;
+  flex-direction: column;
+
+  .error-content {
+    position: relative;
+    z-index: 99;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+
+    .error-code {
+      @include font160;
+      animation: bounce 2s infinite;
+    }
+
+    .error-message {
+      @include font32;
+      margin-bottom: 16px;
+      animation: fadeIn 2s 1s forwards;
+    }
+
+    .error-description {
+      @include font20;
+      max-width: 600px;
+      line-height: 1.5;
+      margin: 0 20px;
+      animation: fadeIn 2s 2s forwards;
+
+      .home-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        @include font16;
+        font-weight: 700;
+        color: var(--font-color-error);
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--font-color-error);
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: var(--font-color-error);
+          color: #000;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .stars,
+  .twinkling,
+  .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+  }
+
+  .stars {
+    background: url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+    z-index: 0;
+  }
+
+  .twinkling {
+    background: url("https://www.transparenttextures.com/patterns/shine.png") repeat;
+    z-index: 1;
+    animation: move-twink-back 200s linear infinite;
+  }
+
+  .clouds {
+    background: url("https://www.transparenttextures.com/patterns/asfalt-light.png") repeat;
+    z-index: 2;
+    animation: move-clouds-back 200s linear infinite;
+  }
+}
