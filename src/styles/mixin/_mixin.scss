@@ -12,7 +12,7 @@
 }
 
 // Space Between Mixin
-@mixin space-between {
+@mixin flex-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
