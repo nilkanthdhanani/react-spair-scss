@@ -9,10 +9,10 @@ $breakpoints-min: (
   "xl-min": 1280px
 ) !default;
 $breakpoints-max: (
-  "xs-max": 319px,
-  "sm-max": 767px,
-  "md-max": 1023px,
-  "lg-max": 1279px
+  "xs-max": 320px,
+  "sm-max": 576px,
+  "md-max": 768px,
+  "lg-max": 1024px
 ) !default;
 @mixin breakpoint($breakpoint) {
   // If the key exists in the map
