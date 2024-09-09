@@ -7,8 +7,10 @@ export default function DefaultLayout() {
   return (
     <>
       <Header />
-      <Outlet />
-      <Footer/>
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </>
   )
 }

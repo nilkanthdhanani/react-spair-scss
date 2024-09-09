@@ -3,10 +3,8 @@ import './home.scss';
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        <h1>Home</h1>
-      </div>
-    </div>
+    <section>
+      <h1>home</h1>
+    </section>
   )
 }
