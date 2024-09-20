@@ -1,4 +1,4 @@
-@import "../styles";
+@import "../styles/typography/typography";
 
 $error-bg-color: #000;
 $error-text-color: #fff;
@@ -11,7 +11,9 @@ $error-accent-color: #ff6f61;
   overflow: hidden;
   color: var(--color-white);
   text-align: center;
-  @include flex-center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 
   .error-content {
