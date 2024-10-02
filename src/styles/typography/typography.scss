@@ -1,0 +1,29 @@
+
+
+
+@mixin font14 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@mixin font16 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin font20 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@mixin font32 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+@mixin font160 {
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 1.2;
+}
